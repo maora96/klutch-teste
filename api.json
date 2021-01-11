@@ -1,0 +1,159 @@
+{
+  "rateTable": [
+    {
+      "id": 1,
+      "name": "tabela 1",
+      "installments": [
+        {
+          "id": 1,
+          "installments": 1,
+          "installmentInterest": 100,
+          "installmentValue": 444,
+          "fullValue": 444,
+          "comission": 1.33
+        },
+        {
+          "id": 2,
+          "installments": 2,
+          "installmentInterest": 20.5,
+          "installmentValue": 1338.76,
+          "fullValue": 2677.51,
+          "comission": 455.51
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "tabela 2",
+      "installments": [
+        {
+          "id": 3,
+          "installments": 1,
+          "installmentInterest": 10,
+          "installmentValue": 22,
+          "fullValue": 224,
+          "comission": 1.33
+        },
+        {
+          "id": 4,
+          "installments": 2,
+          "installmentInterest": 20.5,
+          "installmentValue": 2.76,
+          "fullValue": 9.51,
+          "comission": 3.51
+        }
+      ]
+    }
+  ],
+  "client": [
+    {
+      "id": 1,
+      "name": "Teste Cliente",
+      "phone": "71999999999",
+      "cpf": "9999999999",
+      "bank": {
+        "label": "003 - Banco da Amazonia S.A.",
+        "accountTypeLabel": "Conta Corrente",
+        "accountNumber": "378282246310005"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Teste Cliente 2",
+      "phone": "71222222222",
+      "cpf": "2222222229",
+      "bank": {
+        "label": "003 - Banco da Amazonia S.A.",
+        "accountTypeLabel": "Conta Corrente",
+        "accountNumber": "378282246310005"
+      }
+    }
+  ],
+  "solicitation": [
+    {
+      "id": 1,
+      "clientId": 1,
+      "installmentInterest": 20.5,
+      "installmentInterestValue": 20.5,
+      "comission": 5.5,
+      "comissionValue": 122.21,
+      "installmentValue": 1338.76,
+      "cardNumber": "4012001037141112",
+      "desiredValue": 2222,
+      "totalLoan": 2677.51,
+      "installmentId": 4,
+      "rateTableId": 2
+    },
+    {
+      "installments": 1,
+      "installmentInterest": 10,
+      "installmentInterestValue": null,
+      "installmentValue": 333,
+      "comission": 1.33,
+      "comissionValue": null,
+      "installmentId": 3,
+      "rateTableId": 2,
+      "desiredValue": 333,
+      "cardNumber": "",
+      "totalLoan": "desiredValue + comissionValue + installmentInterestValue",
+      "clientId": 2,
+      "id": 2
+    },
+    {
+      "clientId": 1,
+      "installmentInterest": 10,
+      "installmentInterestValue": null,
+      "comission": 1.33,
+      "comissionValue": null,
+      "installmentValue": 333,
+      "cardNumber": "378282246310005",
+      "desiredValue": 333,
+      "totalLoan": "desiredValue + comissionValue + installmentInterestValue",
+      "installmentId": 3,
+      "rateTableId": 2,
+      "id": 3
+    },
+    {
+      "clientId": 1,
+      "installmentInterest": 10,
+      "installmentInterestValue": null,
+      "comission": 1.33,
+      "comissionValue": null,
+      "installmentValue": 444,
+      "cardNumber": "378282246310005",
+      "desiredValue": 444,
+      "totalLoan": "desiredValue + comissionValue + installmentInterestValue",
+      "installmentId": 3,
+      "rateTableId": 2,
+      "id": 4
+    },
+    {
+      "clientId": 1,
+      "installmentInterest": 10,
+      "installmentInterestValue": null,
+      "comission": 1.33,
+      "comissionValue": null,
+      "installmentValue": 333,
+      "cardNumber": "378282246310005",
+      "desiredValue": 333,
+      "totalLoan": "desiredValue + comissionValue + installmentInterestValue",
+      "installmentId": 3,
+      "rateTableId": 2,
+      "id": 5
+    },
+    {
+      "clientId": 1,
+      "installmentInterest": 20.5,
+      "installmentInterestValue": null,
+      "comission": 455.51,
+      "comissionValue": null,
+      "installmentValue": 222,
+      "cardNumber": "23131231231231",
+      "desiredValue": 444,
+      "totalLoan": "desiredValue + comissionValue + installmentInterestValue",
+      "installmentId": 2,
+      "rateTableId": 1,
+      "id": 6
+    }
+  ]
+}
