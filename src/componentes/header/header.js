@@ -1,14 +1,16 @@
 import React from "react";
+import "./header.css";
+import KlutchLogo from "../../images/Grupo290.svg";
 
 export default function Header() {
   return (
     <div>
       <header>
         <div className="hamburguer-menu"></div>
-        <div className="logo">Klutch Tecnologia</div>
+        <div className="logo">
+          <img src={KlutchLogo} />
+        </div>
       </header>
-
-      <div className="logo-website">Simulação de Taxas</div>
     </div>
   );
 }

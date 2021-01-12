@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import Header from "../../componentes/header/header";
+import Logo from "../../componentes/logo/logo";
 import { useHistory } from "react-router-dom";
 import DataContext from "../../componentes/data/data";
+import "./procurar-cliente.css";
 
 export default function ProcurarCliente() {
   const [client, setClient] = React.useState(null);
@@ -10,9 +12,10 @@ export default function ProcurarCliente() {
 
   const data = useContext(DataContext);
   return (
-    <div>
+    <div className="ProcurarCliente">
       <Header />
-      <h1>Busque o Cliente</h1>
+      <Logo />
+      <h2>Busque o Cliente</h2>
       <form
         onSubmit={(event) => {
           event.preventDefault();
@@ -42,29 +45,20 @@ export default function ProcurarCliente() {
         ""
       ) : (
         <div className="cliente">
-          <h3>Cliente encontrado:</h3>
-          {client.cpf}
-          {client.name}
-          <button
-            onClick={() => {
-              const solicitation = JSON.parse(
-                localStorage.getItem("solicitation")
-              );
-              localStorage.removeItem("solicitation");
-              solicitation.clientId = client.id;
-              localStorage.setItem(
-                "solicitation",
-                JSON.stringify(solicitation)
-              );
-              console.log(solicitation);
-
-              data.clientId = client.id;
-              console.log(data);
-              history.push("/modalidades");
-            }}
-          >
-            Solicitar
-          </button>
+          <div className="cliente-data">
+            <h3>Cliente encontrado:</h3>
+            <span className="cpf">{client.cpf}</span>
+            <span className="name">{client.name}</span>
+            <button
+              onClick={() => {
+                data.clientId = client.id;
+                console.log(data);
+                history.push("/dados");
+              }}
+            >
+              Solicitar
+            </button>
+          </div>
         </div>
       )}
     </div>

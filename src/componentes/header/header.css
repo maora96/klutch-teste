@@ -1,0 +1,14 @@
+header {
+  background-color: #228a95;
+  padding: 0.3rem;
+}
+
+header img {
+  width: 5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

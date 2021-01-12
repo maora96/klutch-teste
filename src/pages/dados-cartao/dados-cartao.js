@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import Header from "../../componentes/header/header";
+import Logo from "../../componentes/logo/logo";
 import { useHistory } from "react-router-dom";
 import DataContext from "../../componentes/data/data";
+import "./dados-cartao.css";
 
 export default function Dados() {
   const [card, setCard] = React.useState("");
@@ -12,37 +14,51 @@ export default function Dados() {
   const data = useContext(DataContext);
 
   return (
-    <div>
+    <div className="Dados">
       <Header />
-      <h2>Dados</h2>
+      <Logo />
       <form
         onSubmit={(event) => {
           event.preventDefault();
           data.cardNumber = card;
           data.cvc = cvc;
           data.date = date;
-          history.push("/confirmar");
+          history.push("/modalidades");
         }}
       >
-        <input type="text"></input>
-        <input
-          type="number"
-          onChange={(event) => {
-            setCard(event.target.value);
-          }}
-        ></input>
-        <input
-          type="text"
-          onChange={(event) => {
-            setDate(event.target.value);
-          }}
-        ></input>
-        <input
-          type="number"
-          onChange={(event) => {
-            setCvc(event.target.value);
-          }}
-        ></input>
+        <div className="dados-content">
+          <div className="box">
+            <span>Insira os dados do Cartão:</span>
+            <input type="text" placeholder="Nome..."></input>
+            <input
+              type="number"
+              placeholder="Número do Cartão..."
+              onChange={(event) => {
+                setCard(event.target.value);
+              }}
+            ></input>
+            <input
+              type="text"
+              placeholder="Data de Validade"
+              onChange={(event) => {
+                setDate(event.target.value);
+              }}
+            ></input>
+            <input
+              type="number"
+              placeholder="CVC"
+              onChange={(event) => {
+                setCvc(event.target.value);
+              }}
+            ></input>
+          </div>
+          <div className="box">
+            <span>Faça o upload dos anexos do cartão:</span>
+            <input></input>
+            <input></input>
+            <input></input>
+          </div>
+        </div>
         <button>Continuar</button>
       </form>
     </div>

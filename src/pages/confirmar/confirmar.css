@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+
+.Confirmar .top {
+  display: flex;
+  justify-content: center;
+}
+
+.Confirmar .top-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Confirmar .taxas-logo {
+  justify-content: flex-start;
+}
+
+.Confirmar .taxas-logo h1 {
+  width: 40%;
+}
+
+.Confirmar .label {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  color: #228a95;
+  font-weight: bold;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+
+.Confirmar .value {
+  padding: 0.1rem;
+  width: 120px;
+  height: 20px;
+  color: #ef9c4b;
+  background-color: white;
+  display: flex;
+  font-size: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-left: 0.8rem;
+}
+
+.Confirmar .subbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  color: #228a95;
+  font-weight: bold;
+  padding: 0.7rem;
+  margin-top: 0.7rem;
+  font-size: 0.7rem;
+  margin-right: 1.3rem;
+}
+
+.Confirmar .emprestimo-data {
+  display: flex;
+  justify-content: center;
+}
+
+.Confirmar .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.Confirmar .btn-container {
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Confirmar .btn-container span {
+  font-size: 0.5rem;
+  font-family: "Lora", serif;
+  color: #228a95;
+}
+
+.Confirmar .buttons-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.Confirmar .buttons-flex .contrato-buttons {
+  background-color: white;
+  font-size: 0.8rem;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  border: none;
+  color: #228a95;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Confirmar .minor {
+  display: flex;
+}
+
+.Confirmar .concluir {
+  background-color: #228a95;
+  font-size: 0.8rem;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  width: 200px;
+  height: 35px;
+}
+
+.Confirmar .active {
+  background-color: #228a95 !important;
+  color: white !important;
+}
+
+.Confirmar table {
+  font-family: "Lora", serif;
+  border-collapse: collapse;
+}
+
+.Confirmar thead {
+  background-color: #f8f8f8;
+}
+
+.Confirmar .no-header {
+  border-top: none;
+}
+
+.Confirmar .table-title {
+  font-size: 1.1rem;
+  color: #228a95;
+}
+
+.Confirmar th {
+  color: #777777;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+}
+
+.Confirmar td {
+  color: #777777;
+  font-size: 0.8rem;
+  border: 1px solid #e6e6e6;
+}
+
+.Confirmar .tabela {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}

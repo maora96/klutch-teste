@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+
+.ProcurarCliente h2 {
+  font-weight: normal;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  color: #228a95;
+}
+
+.ProcurarCliente h3 {
+  font-weight: normal;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  color: #777777;
+  margin-bottom: 0.6rem;
+}
+
+.ProcurarCliente input {
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 0.7rem;
+  border: none;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  padding: 0;
+  width: 200px;
+  height: 25px;
+}
+
+.ProcurarCliente button {
+  background-color: #228a95;
+  font-size: 0.5rem;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  width: 60px;
+  height: 25px;
+}
+
+.ProcurarCliente .cliente {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.ProcurarCliente .cliente-data {
+  background-color: #f8f8f8;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProcurarCliente .cpf {
+  color: #ef9c4b;
+  margin-bottom: 0.6rem;
+}
+
+.ProcurarCliente .name {
+  color: #228a95;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.ProcurarCliente .cliente button {
+  margin-bottom: 0.6rem;
+  width: 80%;
+  height: 35px;
+  font-size: 0.8rem;
+}

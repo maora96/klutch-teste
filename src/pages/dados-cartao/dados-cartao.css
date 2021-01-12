@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+
+.Dados form {
+  margin-top: 2rem;
+}
+
+.Dados .dados-content {
+  display: flex;
+  justify-content: center;
+}
+
+.Dados .box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.Dados input {
+  background-color: #f8f8f8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.5rem;
+  border: none;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  padding: 0;
+  width: 200px;
+  height: 25px;
+  font-family: "Lora", serif;
+  margin-bottom: 0.8rem;
+}
+
+.Dados span {
+  font-family: "Lora", serif;
+  font-size: 0.4rem;
+  margin-bottom: 0.6rem;
+  color: #228a95;
+  font-weight: 500;
+}
+
+.Dados button {
+  background-color: #228a95;
+
+  font-family: "Lora", serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  width: 100px;
+  height: 35px;
+  font-size: 0.8rem;
+}

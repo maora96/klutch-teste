@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+
+.Home h1 {
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
+  color: #228a95;
+}
+
+.Home input {
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 2px;
+  width: 200px;
+  height: 25px;
+  margin-right: 1rem;
+}
+
+.Home button {
+  background-color: #ef9c4b;
+  font-size: 0.5rem;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  width: 60px;
+  height: 20px;
+}
+
+.Home .sticky-bar {
+  background-color: #228a95;
+  color: white;
+  font-size: 0.7rem;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  padding: 0.6rem;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.Home .sticky-bar .bar-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Home .bar-content span {
+  margin-right: 0.5rem;
+}
+.Home .warning {
+  margin-top: 0.5rem;
+  font-size: 0.5rem;
+  font-family: "Lora", serif;
+  font-weight: bold;
+}
+
+.Home .none {
+  display: none;
+}
+
+.Home .block {
+  display: block;
+}
+
+.Home .tabelas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.Home table {
+  font-family: "Lora", serif;
+  border-collapse: collapse;
+}
+
+.Home thead {
+  background-color: #f8f8f8;
+}
+
+.Home .no-header {
+  border-top: none;
+}
+
+.Home .table-title {
+  font-size: 1.1rem;
+  color: #228a95;
+}
+
+.Home th {
+  color: #777777;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+}
+
+.Home td {
+  color: #777777;
+  font-size: 0.8rem;
+  border: 1px solid #e6e6e6;
+}
