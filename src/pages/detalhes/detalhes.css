@@ -1,0 +1,162 @@
+.Detalhes .detalhe-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.Detalhes .detalhe-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.Detalhes .column {
+  margin-right: 1rem;
+}
+
+.Detalhes .one {
+  background-color: #f8f8f8;
+  margin-bottom: 0.4rem;
+  font-family: "Lora", serif;
+  font-size: 0.4rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.Detalhes .one-single {
+  background-color: #f8f8f8;
+  margin-bottom: 0.4rem;
+  font-size: 0.5rem;
+  font-family: "Lora", serif;
+  padding: 0.4rem;
+  color: #777777;
+}
+
+.Detalhes .one-single span {
+  color: #228a95;
+  font-weight: bold;
+}
+
+.Detalhes .one-box img {
+  width: 10%;
+  margin-left: 0.4rem;
+}
+
+.Detalhes .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Detalhes .one-box {
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #777777;
+}
+
+.Detalhes .one-box div {
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.Detalhes .one-box-left {
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #777777;
+}
+
+.Detalhes .one-box-left div {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.Detalhes .one-special {
+  font-family: "Lora", serif;
+  font-size: 0.3rem;
+  background-color: #e8f3f4;
+  margin-bottom: 0.4rem;
+  margin-top: 0.3rem;
+  padding: 1rem;
+  text-align: left;
+  color: #777777;
+  border: 1px dashed #187680;
+}
+
+.Detalhes .one-special .center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.Detalhes .one-special .center div {
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.Detalhes .one-special img {
+  width: 15%;
+  margin-right: 0.4rem;
+}
+
+.Detalhes .status {
+  color: white;
+  width: 100px;
+  padding: 0.3rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+
+.Detalhes .orange {
+  background-color: #ef9c4b;
+}
+
+.Detalhes .red {
+  background-color: #bc3434;
+}
+
+.Detalhes .green {
+  background-color: #228a95;
+}
+
+.Detalhes .card-holder {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.Detalhes .card {
+  background-color: #f8f8f8;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 120px;
+  align-items: center;
+  font-size: 0.6rem;
+  font-family: "Lora", serif;
+  color: #777777;
+}
+
+.Detalhes .card span {
+  margin-top: 0.7rem;
+}
+
+.Detalhes .card img {
+  width: 25%;
+  margin-top: 0.7rem;
+}
+
+.Detalhes .valor {
+  color: #31ac2b !important;
+  font-weight: bold;
+}

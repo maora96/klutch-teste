@@ -26,6 +26,8 @@ const data = {
   modalidade: null,
   contrato: null,
   tabela: null,
+  date: null,
+  cvc: null,
 };
 
 export default function App() {

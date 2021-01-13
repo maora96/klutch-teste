@@ -76,12 +76,12 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody>
-                    {tabela.installments.map((i) => {
+                    {tabela.installments.map((i, indice) => {
                       return (
                         <tr
                           onClick={() => {
                             setTabelaEscolhida(tabela);
-                            setParcela(i);
+                            setParcela(tabela.installments[indice]);
                             console.log(tabela);
                             console.log(i);
                           }}
@@ -90,7 +90,7 @@ export default function Home() {
                           <td>{i.installmentInterest} %</td>
                           <td>R$ {valor / i.installments}</td>
                           <td>R$ {valor}</td>
-                          <td>R$ {i.comission}</td>
+                          <td>{i.comission} %</td>
                         </tr>
                       );
                     })}
@@ -118,15 +118,19 @@ export default function Home() {
             onClick={() => {
               data.installments = parcela.installments;
               data.installmentInterest = parcela.installmentInterest;
-              data.installmentInterestValue = null;
+              data.installmentInterestValue =
+                ((parcela.installmentInterest / 100) * valor) /
+                parseInt(parcela.installments);
               data.installmentId = parcela.id;
-              data.installmentValue = valor / parcela.installments;
+              data.installmentValue = valor / parseInt(parcela.installments);
               data.comission = parcela.comission;
-              data.comissionValue = null;
+              data.comissionValue = (parcela.comission / 100) * valor;
               data.installmentId = parcela.id;
               data.rateTableId = tabelaEscolhida.id;
               data.desiredValue = parseInt(valor);
-              data.totalLoan = "desir comiss Inter";
+              data.totalLoan =
+                parseInt(valor) +
+                data.installmentInterestValue * parcela.installments;
               data.tabela = tabelaEscolhida;
 
               console.log(data);

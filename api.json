@@ -154,6 +154,34 @@
       "installmentId": 2,
       "rateTableId": 1,
       "id": 6
+    },
+    {
+      "clientId": 1,
+      "installmentInterest": 100,
+      "installmentInterestValue": 1231,
+      "comission": 1.33,
+      "comissionValue": 16.372300000000003,
+      "installmentValue": 1231,
+      "cardNumber": "31231",
+      "desiredValue": 1231,
+      "totalLoan": 2462,
+      "installmentId": 1,
+      "rateTableId": 1,
+      "id": 7
+    },
+    {
+      "clientId": 1,
+      "installmentInterest": 100,
+      "installmentInterestValue": 313,
+      "comission": 1.33,
+      "comissionValue": 4.1629000000000005,
+      "installmentValue": 313,
+      "cardNumber": "1231",
+      "desiredValue": 313,
+      "totalLoan": 626,
+      "installmentId": 1,
+      "rateTableId": 1,
+      "id": 8
     }
   ]
 }

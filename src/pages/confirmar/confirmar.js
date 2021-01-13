@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 import Header from "../../componentes/header/header";
 import Logo from "../../componentes/logo/logo";
+import Check from "../../images/single-check.svg";
 import { useHistory } from "react-router-dom";
 import DataContext from "../../componentes/data/data";
 import "./confirmar.css";
+import { fazerRequisicaoComBody } from "../../utils/fetch";
 
 export default function Confirmar() {
   const [contrato, setContrato] = React.useState("Manual");
@@ -27,7 +29,7 @@ export default function Confirmar() {
 
       <div className="emprestimo-data">
         <div className="left">
-          <div className="subbox">
+          <div className="subbox lime">
             <span>Valor Desejado</span>
             <span className="value">{data.desiredValue}</span>
           </div>
@@ -37,7 +39,7 @@ export default function Confirmar() {
           </div>
         </div>
         <div className="left">
-          <div className="subbox">
+          <div className="subbox lime">
             <span>Valor Total do Emprestimo</span>
             <span className="value">{data.totalLoan}</span>
           </div>
@@ -90,12 +92,17 @@ export default function Confirmar() {
                   installmentId: data.installmentId,
                   rateTableId: data.rateTableId,
                 };
-                console.log(contrato);
+                fazerRequisicaoComBody(
+                  "http://localhost:3000/solicitation",
+                  "POST",
+                  emprestimo
+                );
 
                 data.contrato = contrato;
                 history.push("/revisao");
               }}
             >
+              <img src={Check} />
               Concluir
             </button>
           </div>

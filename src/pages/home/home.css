@@ -105,3 +105,7 @@
   font-size: 0.8rem;
   border: 1px solid #e6e6e6;
 }
+
+.Home tr:active {
+  background-color: #fbf8d5;
+}

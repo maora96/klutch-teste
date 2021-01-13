@@ -158,3 +158,12 @@
   justify-content: center;
   margin-top: 2rem;
 }
+
+.Confirmar button img {
+  width: 8%;
+  margin-right: 0.4rem;
+}
+
+.Confirmar .lime {
+  background-color: #e8ffe3;
+}

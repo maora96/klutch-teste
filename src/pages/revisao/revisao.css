@@ -27,11 +27,15 @@
   width: 70%;
 }
 
+.Revisao .subbox img {
+  width: 8%;
+}
+
 .Revisao .subbox {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f8f8f8;
+  background-color: #e8ffe3;
   color: #228a95;
   font-weight: bold;
   padding: 0.7rem;
